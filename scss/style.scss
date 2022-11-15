@@ -7,11 +7,12 @@
 }
 
 body {
-//     display: flex;
+    display: flex;
     background-color: $verde;
-//     height: 100vh;
-//     align-items: center;
-//     justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
 //         > .card-exercicio {
 //             background-color: $cinza-claro;
@@ -38,8 +39,62 @@ body {
 //             }
 }
     
+main {
+    background-color: $cinza-claro
+}
+
+table {
+    background-color: white;
+    border: solid black 1px;
+    border-collapse: collapse; // MACETE PARA APARECER A BORDA COLORIDA. EH USADO PARA ELIMINAR OU NÃO ESPAÇO ENTRE CÉLULAS, SE ELAS COMPARTILHARÃO A MESMA BORDA OU NÃO
+}
+
+table thead {
+    border: solid black 1px;
+}
+
+.card-exercicio {
+
+    background-color: $cinza-claro;
+    flex-grow: 1;
+    display: flex;
+    gap: 4px;
+    padding: 10px;
+
+    > * {
+        flex-grow: 1;
+        width: 100%;    
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        
+        
+        
+        > input {
+            padding: 10px;
+            border-radius: 2px;
+            border: solid $cinza-medio 2px;
+            outline: none;
+        }
+
+        > button {
+            padding: 10px;
+            color: white;
+            background-color: $cinza-escuro;
+            border: none;
+            border-radius: 2px;
+        }
+    } 
 
 
+    &__entrada {
+        justify-content: space-evenly;
+    }
+
+    
+}
 // #retorno_ok {
 //     display: none;
 //     background-color: $verde;

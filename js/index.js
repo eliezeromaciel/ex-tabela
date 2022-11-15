@@ -1,3 +1,2 @@
-import "../SCSS/style.scss"
+import "../scss/style.scss"
 
-console.log("js page Lista");
