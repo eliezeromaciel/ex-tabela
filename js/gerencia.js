@@ -21,7 +21,4 @@ async function cadastraCurso (curso, descricao){
         body: JSON.stringify(corpoDaRequisicao),
         headers: { "Content-type": "application/json" }
     })
-
-
-
 }
